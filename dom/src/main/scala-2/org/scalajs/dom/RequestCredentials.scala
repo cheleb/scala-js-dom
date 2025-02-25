@@ -8,6 +8,6 @@ sealed trait RequestCredentials extends js.Any
 
 object RequestCredentials {
   val omit: RequestCredentials = "omit".asInstanceOf[RequestCredentials]
-  val `same-origin` = "same-origin".asInstanceOf[RequestCredentials]
+  val `same-origin`: RequestCredentials = "same-origin".asInstanceOf[RequestCredentials]
   val include: RequestCredentials = "include".asInstanceOf[RequestCredentials]
 }

@@ -13,21 +13,21 @@ object RTCSignalingState {
   val stable: RTCSignalingState = "stable".asInstanceOf[RTCSignalingState]
 
   /** A local description, of type "offer", has been successfully applied. */
-  val `have-local-offer` = "have-local-offer".asInstanceOf[RTCSignalingState]
+  val `have-local-offer`: RTCSignalingState = "have-local-offer".asInstanceOf[RTCSignalingState]
 
   /** A remote description, of type "offer", has been successfully applied. */
-  val `have-remote-offer` = "have-remote-offer".asInstanceOf[RTCSignalingState]
+  val `have-remote-offer`: RTCSignalingState = "have-remote-offer".asInstanceOf[RTCSignalingState]
 
   /** A remote description of type "offer" has been successfully applied and a local description of type "pranswer" has
     * been successfully applied.
     */
-  val `have-local-pranswer` =
+  val `have-local-pranswer`: RTCSignalingState =
     "have-local-pranswer".asInstanceOf[RTCSignalingState]
 
   /** A local description of type "offer" has been successfully applied and a remote description of type "pranswer" has
     * been successfully applied.
     */
-  val `have-remote-pranswer` =
+  val `have-remote-pranswer`: RTCSignalingState =
     "have-remote-pranswer".asInstanceOf[RTCSignalingState]
 
   /** The connection is closed. */

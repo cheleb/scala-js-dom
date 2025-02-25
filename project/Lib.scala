@@ -18,7 +18,6 @@ object Lib {
         "-Xfatal-warnings",
       )),
       scalacOptions ++= (CrossVersion.partialVersion(scalaVersion.value) match {
-        case Some((2, 11)) => "-Ywarn-unused-import" :: Nil
         case Some((2, 12)) => "-Ywarn-unused:imports,patvars,locals,implicits" :: Nil
         case Some((2, 13)) => "-Wunused:imports,patvars,locals,implicits" :: Nil
         case _             => Nil
@@ -29,7 +28,6 @@ object Lib {
   def crossScala: Project => Project = _
     .settings(
       crossScalaVersions := Seq(
-        Ver.scala211,
         Ver.scala212,
         Ver.scala213,
         Ver.scala3,

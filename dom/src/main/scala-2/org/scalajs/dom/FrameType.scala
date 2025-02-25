@@ -15,7 +15,7 @@ object FrameType {
   val auxiliary: FrameType = "auxiliary".asInstanceOf[FrameType]
 
   /** The window client's global object's browsing context is a top-level browsing context. */
-  val `top-level` = "top-level".asInstanceOf[FrameType]
+  val `top-level`: FrameType = "top-level".asInstanceOf[FrameType]
 
   /** The window client's global object's browsing context is a nested browsing context. */
   val nested: FrameType = "nested".asInstanceOf[FrameType]

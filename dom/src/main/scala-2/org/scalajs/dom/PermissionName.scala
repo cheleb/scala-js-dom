@@ -11,6 +11,6 @@ object PermissionName {
   val notifications: PermissionName = "notifications".asInstanceOf[PermissionName]
   val push: PermissionName = "push".asInstanceOf[PermissionName]
 
-  val `persistent-storage` =
+  val `persistent-storage`: PermissionName =
     "persistent-storage".asInstanceOf[PermissionName]
 }

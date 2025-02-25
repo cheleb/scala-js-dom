@@ -9,8 +9,8 @@ sealed trait RTCStatsType extends js.Any
 object RTCStatsType {
 
   /** Inbound RTP. */
-  val `inbound-rtp` = "inbound-rtp".asInstanceOf[RTCStatsType]
+  val `inbound-rtp`: RTCStatsType = "inbound-rtp".asInstanceOf[RTCStatsType]
 
   /** Outbound RTP. */
-  val `outbound-rtp` = "outbound-rtp".asInstanceOf[RTCStatsType]
+  val `outbound-rtp`: RTCStatsType = "outbound-rtp".asInstanceOf[RTCStatsType]
 }

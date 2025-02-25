@@ -8,7 +8,7 @@ sealed trait RequestMode extends js.Any
 
 object RequestMode {
   val navigate: RequestMode = "navigate".asInstanceOf[RequestMode]
-  val `same-origin` = "same-origin".asInstanceOf[RequestMode]
-  val `no-cors` = "no-cors".asInstanceOf[RequestMode]
+  val `same-origin`: RequestMode = "same-origin".asInstanceOf[RequestMode]
+  val `no-cors`: RequestMode = "no-cors".asInstanceOf[RequestMode]
   val cors: RequestMode = "cors".asInstanceOf[RequestMode]
 }

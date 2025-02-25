@@ -2336,7 +2336,7 @@ FrameType[JT]
 FrameType[SO] val auxiliary: FrameType
 FrameType[SO] val nested: FrameType
 FrameType[SO] val none: FrameType
-FrameType[SO] val `top-level` = "top-level".asInstanceOf[FrameType]
+FrameType[SO] val `top-level`: FrameType
 FrozenArray[JT] @js.annotation.JSBracketAccess def apply(index: Int): T
 FrozenArray[JT] val length: Int
 FullscreenOptions[JT] var navigationUI: js.UndefOr[String]
@@ -16301,11 +16301,11 @@ LockOptions[JT] var mode: js.UndefOr[LockMode]
 LockOptions[JT] var signal: js.UndefOr[AbortSignal]
 LockOptions[JT] var steal: js.UndefOr[Boolean]
 MIMEType[JT]
-MIMEType[SO] val `application/xhtml+xml` = "application/xhtml+xml".asInstanceOf[MIMEType]
-MIMEType[SO] val `application/xml` = "application/xml".asInstanceOf[MIMEType]
-MIMEType[SO] val `image/svg+xml` = "image/svg+xml".asInstanceOf[MIMEType]
-MIMEType[SO] val `text/html` = "text/html".asInstanceOf[MIMEType]
-MIMEType[SO] val `text/xml` = "text/xml".asInstanceOf[MIMEType]
+MIMEType[SO] val `application/xhtml+xml`: MIMEType
+MIMEType[SO] val `application/xml`: MIMEType
+MIMEType[SO] val `image/svg+xml`: MIMEType
+MIMEType[SO] val `text/html`: MIMEType
+MIMEType[SO] val `text/xml`: MIMEType
 MediaDeviceInfo[JT] val deviceId: String
 MediaDeviceInfo[JT] val groupId: String
 MediaDeviceInfo[JT] val kind: MediaDeviceKind
@@ -17099,7 +17099,7 @@ PermissionName[JT]
 PermissionName[SO] val geolocation: PermissionName
 PermissionName[SO] val midi: PermissionName
 PermissionName[SO] val notifications: PermissionName
-PermissionName[SO] val `persistent-storage` = "persistent-storage".asInstanceOf[PermissionName]
+PermissionName[SO] val `persistent-storage`: PermissionName
 PermissionName[SO] val push: PermissionName
 PermissionState[JT]
 PermissionState[SO] val denied: PermissionState
@@ -17318,8 +17318,8 @@ QueuingStrategy[JT] var highWaterMark: Int
 QueuingStrategy[JT] var size: js.Function1[T, Int]
 RTCBundlePolicy[JT]
 RTCBundlePolicy[SO] val balanced: RTCBundlePolicy
-RTCBundlePolicy[SO] val `max-bundle` = "max-bundle".asInstanceOf[RTCBundlePolicy]
-RTCBundlePolicy[SO] val `max-compat` = "max-compat".asInstanceOf[RTCBundlePolicy]
+RTCBundlePolicy[SO] val `max-bundle`: RTCBundlePolicy
+RTCBundlePolicy[SO] val `max-compat`: RTCBundlePolicy
 RTCConfiguration[JT] var bundlePolicy: js.UndefOr[RTCBundlePolicy]
 RTCConfiguration[JT] var iceServers: js.UndefOr[js.Array[RTCIceServer]]
 RTCConfiguration[JT] var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy]
@@ -17492,18 +17492,18 @@ RTCSessionDescriptionInit[JT] var `type`: js.UndefOr[RTCSdpType]
 RTCSessionDescriptionInit[SO] def apply(`type`: js.UndefOr[RTCSdpType]?, sdp: js.UndefOr[String]?): RTCSessionDescriptionInit  (@deprecated in 2.0.0)
 RTCSignalingState[JT]
 RTCSignalingState[SO] val closed: RTCSignalingState
-RTCSignalingState[SO] val `have-local-offer` = "have-local-offer".asInstanceOf[RTCSignalingState]
-RTCSignalingState[SO] val `have-local-pranswer` = "have-local-pranswer".asInstanceOf[RTCSignalingState]
-RTCSignalingState[SO] val `have-remote-offer` = "have-remote-offer".asInstanceOf[RTCSignalingState]
-RTCSignalingState[SO] val `have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[RTCSignalingState]
+RTCSignalingState[SO] val `have-local-offer`: RTCSignalingState
+RTCSignalingState[SO] val `have-local-pranswer`: RTCSignalingState
+RTCSignalingState[SO] val `have-remote-offer`: RTCSignalingState
+RTCSignalingState[SO] val `have-remote-pranswer`: RTCSignalingState
 RTCSignalingState[SO] val stable: RTCSignalingState
 RTCStats[JT] val id: String
 RTCStats[JT] val timestamp: Double
 RTCStats[JT] val `type`: RTCStatsType
 RTCStatsReport[JT] def apply(id: String): RTCStats
 RTCStatsType[JT]
-RTCStatsType[SO] val `inbound-rtp` = "inbound-rtp".asInstanceOf[RTCStatsType]
-RTCStatsType[SO] val `outbound-rtp` = "outbound-rtp".asInstanceOf[RTCStatsType]
+RTCStatsType[SO] val `inbound-rtp`: RTCStatsType
+RTCStatsType[SO] val `outbound-rtp`: RTCStatsType
 RadioNodeList[JC] @JSBracketAccess def apply(index: Int): T
 RadioNodeList[JC] def item(index: Int): T
 RadioNodeList[JC] def length: Int
@@ -17564,11 +17564,11 @@ ReadableStreamUnderlyingSource[JT] var start: js.UndefOr[js.Function1[ReadableSt
 ReadableStreamUnderlyingSource[JT] var `type`: js.UndefOr[ReadableStreamType]
 ReferrerPolicy[JT]
 ReferrerPolicy[SO] val empty: ReferrerPolicy
-ReferrerPolicy[SO] val `no-referrer` = "no-referrer".asInstanceOf[ReferrerPolicy]
-ReferrerPolicy[SO] val `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[ReferrerPolicy]
-ReferrerPolicy[SO] val `origin-only` = "origin-only".asInstanceOf[ReferrerPolicy]
-ReferrerPolicy[SO] val `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[ReferrerPolicy]
-ReferrerPolicy[SO] val `unsafe-url` = "unsafe-url".asInstanceOf[ReferrerPolicy]
+ReferrerPolicy[SO] val `no-referrer`: ReferrerPolicy
+ReferrerPolicy[SO] val `no-referrer-when-downgrade`: ReferrerPolicy
+ReferrerPolicy[SO] val `origin-only`: ReferrerPolicy
+ReferrerPolicy[SO] val `origin-when-cross-origin`: ReferrerPolicy
+ReferrerPolicy[SO] val `unsafe-url`: ReferrerPolicy
 Request[JC] def arrayBuffer(): js.Promise[ArrayBuffer]
 Request[JC] def blob(): js.Promise[Blob]
 Request[JC] def bodyUsed: Boolean
@@ -17591,15 +17591,15 @@ Request[JC] def text(): js.Promise[String]
 Request[JC] def url: String
 RequestCache[JT]
 RequestCache[SO] val default: RequestCache
-RequestCache[SO] val `force-cache` = "force-cache".asInstanceOf[RequestCache]
-RequestCache[SO] val `no-cache` = "no-cache".asInstanceOf[RequestCache]
-RequestCache[SO] val `no-store` = "no-store".asInstanceOf[RequestCache]
-RequestCache[SO] val `only-if-cached` = "only-if-cached".asInstanceOf[RequestCache]
+RequestCache[SO] val `force-cache`: RequestCache
+RequestCache[SO] val `no-cache`: RequestCache
+RequestCache[SO] val `no-store`: RequestCache
+RequestCache[SO] val `only-if-cached`: RequestCache
 RequestCache[SO] val reload: RequestCache
 RequestCredentials[JT]
 RequestCredentials[SO] val include: RequestCredentials
 RequestCredentials[SO] val omit: RequestCredentials
-RequestCredentials[SO] val `same-origin` = "same-origin".asInstanceOf[RequestCredentials]
+RequestCredentials[SO] val `same-origin`: RequestCredentials
 RequestDestination[JT]
 RequestDestination[SO] val document: RequestDestination
 RequestDestination[SO] val empty: RequestDestination
@@ -17626,8 +17626,8 @@ RequestInit[JT] var window: js.UndefOr[Null]
 RequestMode[JT]
 RequestMode[SO] val cors: RequestMode
 RequestMode[SO] val navigate: RequestMode
-RequestMode[SO] val `no-cors` = "no-cors".asInstanceOf[RequestMode]
-RequestMode[SO] val `same-origin` = "same-origin".asInstanceOf[RequestMode]
+RequestMode[SO] val `no-cors`: RequestMode
+RequestMode[SO] val `same-origin`: RequestMode
 RequestRedirect[JT]
 RequestRedirect[SO] val error: RequestRedirect
 RequestRedirect[SO] val follow: RequestRedirect
